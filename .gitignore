@@ -1,18 +1,8 @@
 # Ignore Visual Studio temporary files, build results, and build directories
 *.log
 .vs/
-# .vscode
-# [Tt]humbs.db
-# *.user
-# *.userosscache
-# *.suo
-# *.userprefs
 
 # Ignore build output directories
 bin/
 obj/
-
-# Ignore NuGet packages
-*.nupkg
-packages/
 

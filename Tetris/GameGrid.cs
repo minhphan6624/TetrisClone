@@ -84,7 +84,8 @@
             }
         }
 
-        private void MoveRowDown(int r, int numRows)        //Move a row down by a number of rows
+        //Move a row down
+        private void MoveRowDown(int r, int numRows)        
         {
             for (int c = 0; c < Columns; c++)
             {
@@ -93,7 +94,8 @@
             }
         }
 
-        public int ClearFullRows()                          //Clear multiple rows
+        //Clear multiple rows
+        public int ClearFullRows()                          
         {
             int cleared = 0;                                //number of cleared rows
 
