@@ -12,11 +12,13 @@
             get => _rows;
             set => _rows = value;
         }
+        
         public int Columns { 
             get => _columns;
             set => _columns = value;
         }
 
+        //Indexer
         public int this[int r, int c]
         {
             get => _grid[r, c];
@@ -32,17 +34,21 @@
         }
 
         //Methods
-        public bool IsInside(int r, int c)                  //Check if a cell is inside the Game _grid
+
+        //Check if a cell is inside the Game _grid
+        public bool IsInside(int r, int c)                  
         {
             return r >= 0 && r < Rows && c >= 0 && c < Columns;
         }
 
-        public bool IsEmpty(int r, int c)                   //Check if a cell is empty
+        //Check if a cell is empty
+        public bool IsEmpty(int r, int c)         
         {
             return IsInside(r, c) && _grid[r, c] == 0;
         }
 
-        public bool IsRowFull(int r)                        //Check if an entire row is full 
+        //Check if a row is full
+        public bool IsRowFull(int r)                        
         {
             for (int c = 0; c < Columns; c++)
             {
@@ -55,7 +61,8 @@
             return true;
         }
 
-        public bool IsRowEmpty(int r)                       // Check if an entire row is empty
+        // Check if an entire row is empty
+        public bool IsRowEmpty(int r)                       
         {
             for (int c = 0; c < Columns; c++)
             {
@@ -68,7 +75,8 @@
             return true;
         }
 
-        private void ClearRow(int r)                        //Clear a row
+         //Clear a row
+        private void ClearRow(int r)                       
         {
             for (int c = 0; c < Columns; c++)
             {
