@@ -4,7 +4,7 @@
     {
         //Attributes
         private Block _currentBlock;                    //The currently moving block
-        private Block _heldBlock;                       //The current block on hold
+        private Block? _heldBlock;                       //The current block on hold
         private bool _canHold;                          
         private GameGrid _gameGrid;                     //The main game grid
         private BlockQueue _blockQueue;                 //The main block queue
@@ -72,10 +72,12 @@
         //Constructor
         public GameState()
         {
-            GameGrid = new GameGrid(22, 10);                
-            BlockQueue = new BlockQueue();
-            CurrentBlock = BlockQueue.GetAndUpdate();
-            CanHold = true;
+            _gameGrid = new GameGrid(22, 10);                
+            _blockQueue = new BlockQueue();
+            _currentBlock = BlockQueue.GetAndUpdate();
+            _heldBlock = null;
+            _canHold = true;
+
         }
 
         //Methods

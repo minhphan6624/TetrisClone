@@ -30,7 +30,7 @@ namespace Tetris
         //Constructor
         public BlockQueue()
         {
-            NextBlock = RandomBlock();
+            _nextBlock = RandomBlock();
         }
 
         //Methods
