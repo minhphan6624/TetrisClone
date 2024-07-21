@@ -11,4 +11,4 @@ This program is an implementation of the renowned Tetris game in C# using WPF.
 - Run "dotnet build"
 - Run "dotnet run"
 
-For more information about the project, check out [this documentation] [https://liveswinburneeduau-my.sharepoint.com/:w:/g/personal/104097284_student_swin_edu_au/EemUeKME_cxFuCrS_t9wr6QBFzSE8YDfnZfAOpTJ4wcmxA?e=t3fGOE]
+For more information about the project, check out [this documentation] (https://liveswinburneeduau-my.sharepoint.com/:w:/g/personal/104097284_student_swin_edu_au/EemUeKME_cxFuCrS_t9wr6QBFzSE8YDfnZfAOpTJ4wcmxA?e=t3fGOE)
